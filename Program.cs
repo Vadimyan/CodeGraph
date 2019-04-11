@@ -9,13 +9,28 @@ namespace CodeGraph
 {
     // Полезные ссылки:
     // Source code to IL online: https://sharplab.io/#v2
+    // Mono.Cecil hello world: https://github.com/jbevain/cecil/wiki/HOWTO 
     static class Program
     {
         static void Main(string[] args)
         {
-            new ClassC().Method();
-            UsedMethods();
+            // Задача 1 (раскомментировать для решения)
+            //new ClassC().Method();
+            //UsedMethods();
+
+            // Задача 2 (раскомментировать для решения)
+            //new ClassC().Method();
             //UnusedMethods();
+
+            // Задача 3 (раскомментировать для решения)
+            //Console.WriteLine($"Задача 3: {(ChechRecursion("CodeGraph.RecursionTask", "SimpleRecursion") ? "ОК" : "НеОК")}");
+            //Console.WriteLine($"Задача 4: {(ChechRecursion("CodeGraph.RecursionTask", "HardRecursion") ? "ОК" : "НеОК")}");
+            //Console.WriteLine($"Задача 5: {(ChechRecursion("CodeGraph.RecursionTask", "ImplicitRecursion") ? "ОК" : "НеОК")}");
+        }
+
+        private static bool ChechRecursion(string classFullName, string methodName)
+        {
+            throw new NotImplementedException();
         }
 
         private static void UnusedMethods()
