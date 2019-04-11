@@ -43,7 +43,6 @@ namespace CodeGraph
             Console.WriteLine();
         }
 
-        private static HashSet<MethodDefinition> visitedMethods = new HashSet<MethodDefinition>();
         static void PrintUsedMethods(this MethodDefinition method)
         {
             var visitedMethods = new HashSet<MethodDefinition>();
